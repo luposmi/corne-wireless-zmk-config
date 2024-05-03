@@ -41,6 +41,12 @@
             bindings = <&kp LS(LCTRL)>;
             key-positions = <20 21>;
         };
+
+        double_colon {
+            bindings = <&double_colon>;
+            key-positions = <38 39>;
+            layers = <0>;
+        };
     };
 
     behaviors {
