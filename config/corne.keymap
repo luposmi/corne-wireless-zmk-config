@@ -48,9 +48,15 @@
             layers = <0>;
         };
 
-        autocomplete {
+        autocomplete_l {
             bindings = <&kp RC(ENTER)>;
-            key-positions = <15 20>;
+            key-positions = <40 37 14>;
+            layers = <0>;
+        };
+
+        autocomplete_r {
+            bindings = <&kp RC(ENTER)>;
+            key-positions = <37 40 21>;
             layers = <0>;
         };
     };
