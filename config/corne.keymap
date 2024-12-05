@@ -104,7 +104,7 @@
             display-name = "Base";
             bindings = <
 &kp TAB      &kp Q  &kp W         &kp E              &kp R  &kp T        &kp Y          &kp U  &kp I               &kp O         &kp P          &kp LA(F12)
-&kp ESCAPE   &kp A  &hrl LCTRL S  &hrl LEFT_SHIFT D  &kp F  &kp G        &kp H          &kp J  &hrr RIGHT_SHIFT K  &hrr RCTRL L  &doublecollon  &kp RA(SEMICOLON)
+&kp ESCAPE   &kp A  &hrl LCTRL S  &hrl LEFT_SHIFT D  &kp F  &kp G        &kp H          &kp J  &hrr RIGHT_SHIFT K  &hrr RCTRL L  &doublecollon  &kp RA(ENTER)
 &kp LA(F11)  &kp Z  &kp X         &kp C              &kp V  &kp B        &kp N          &kp M  &kp COMMA           &kp DOT       &kp FSLH       &kp RA(SQT)
                                   &mo 4              &mo 2  &kp SPACE    &kp BACKSPACE  &mo 3  &kp LGUI
             >;
@@ -153,10 +153,10 @@
 
         AltGr {
             bindings = <
-&trans  &trans              &trans             &trans                 &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(APOSTROPHE)  &kp RA(SEMICOLON)  &kp RA(RIGHT_BRACKET)  &kp RA(MINUS)  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans              &trans             &trans                 &trans         &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                               &trans                 &trans         &trans    &trans  &trans  &trans
+&trans  &trans              &trans             &kp RA(E)              &trans         &trans    &trans  &trans              &trans             &trans  &trans  &trans
+&trans  &kp RA(APOSTROPHE)  &kp RA(SEMICOLON)  &kp RA(RIGHT_BRACKET)  &kp RA(MINUS)  &trans    &trans  &hrr RIGHT_SHIFT J  &hrr LEFT_SHIFT J  &trans  &trans  &trans
+&trans  &trans              &trans             &trans                 &trans         &trans    &trans  &kp RA(M)           &trans             &trans  &trans  &trans
+                                               &trans                 &trans         &trans    &trans  &trans              &trans
             >;
         };
     };
