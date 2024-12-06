@@ -153,10 +153,10 @@
 
         AltGr {
             bindings = <
-&trans  &trans              &trans             &kp RA(E)              &trans         &trans    &trans  &trans              &trans             &trans  &trans  &trans
-&trans  &kp RA(APOSTROPHE)  &kp RA(SEMICOLON)  &kp RA(RIGHT_BRACKET)  &kp RA(MINUS)  &trans    &trans  &hrr RIGHT_SHIFT J  &hrr LEFT_SHIFT J  &trans  &trans  &trans
-&trans  &trans              &trans             &trans                 &trans         &trans    &trans  &kp RA(M)           &trans             &trans  &trans  &trans
-                                               &trans                 &trans         &trans    &trans  &trans              &trans
+&trans  &trans              &trans             &kp RA(E)             &trans         &trans    &trans  &trans              &trans             &trans  &trans  &trans
+&trans  &kp RA(APOSTROPHE)  &kp RA(SEMICOLON)  &kp RA(LEFT_BRACKET)  &kp RA(MINUS)  &trans    &trans  &hrr RIGHT_SHIFT J  &hrr LEFT_SHIFT J  &trans  &trans  &trans
+&trans  &trans              &trans             &trans                &trans         &trans    &trans  &kp RA(M)           &trans             &trans  &trans  &trans
+                                               &trans                &trans         &trans    &trans  &trans              &trans
             >;
         };
     };
