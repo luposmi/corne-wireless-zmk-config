@@ -6,6 +6,7 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -80,6 +81,18 @@
             #binding-cells = <0>;
             mods = <(MOD_LCTL)>;
         };
+
+        hrr_m: hrr_m {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRR_M";
+            bindings = <&kp>, <&mmv>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <60>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            quick-tap-ms = <200>;
+            flavor = "tap-unless-interrupted";
+        };
     };
 
     macros {
@@ -153,10 +166,10 @@
 
         AltGr {
             bindings = <
-&trans  &trans              &trans             &kp RA(E)             &trans         &trans    &trans  &trans              &trans             &trans  &trans  &trans
-&trans  &kp RA(APOSTROPHE)  &kp RA(SEMICOLON)  &kp RA(LEFT_BRACKET)  &kp RA(MINUS)  &trans    &trans  &hrr RIGHT_SHIFT J  &hrr LEFT_SHIFT K  &trans  &trans  &trans
-&trans  &trans              &trans             &trans                &trans         &trans    &trans  &kp RA(M)           &trans             &trans  &trans  &trans
-                                               &trans                &trans         &trans    &trans  &trans              &trans
+&trans  &trans              &trans             &kp RA(E)             &trans         &trans    &trans          &trans                        &trans                     &trans           &trans  &trans
+&trans  &kp RA(APOSTROPHE)  &kp RA(SEMICOLON)  &kp RA(LEFT_BRACKET)  &kp RA(MINUS)  &trans    &mmv MOVE_LEFT  &hrr_m RIGHT_SHIFT MOVE_DOWN  &hrr_m LEFT_SHIFT MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans              &trans             &trans                &trans         &trans    &trans          &kp RA(M)                     &trans                     &trans           &trans  &trans
+                                               &trans                &trans         &trans    &trans          &trans                        &trans
             >;
         };
     };
