@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -166,10 +167,10 @@
 
         AltGr {
             bindings = <
-&trans  &trans              &trans             &kp RA(E)             &trans         &trans    &trans          &trans                        &trans                     &trans           &trans  &trans
-&trans  &kp RA(APOSTROPHE)  &kp RA(SEMICOLON)  &kp RA(LEFT_BRACKET)  &kp RA(MINUS)  &trans    &mmv MOVE_LEFT  &hrr_m RIGHT_SHIFT MOVE_DOWN  &hrr_m LEFT_SHIFT MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans              &trans             &trans                &trans         &trans    &trans          &kp RA(M)                     &trans                     &trans           &trans  &trans
-                                               &trans                &trans         &trans    &trans          &trans                        &trans
+&trans  &trans              &trans             &kp RA(E)             &trans         &trans      &trans          &trans                        &trans                     &trans           &trans  &trans
+&trans  &kp RA(APOSTROPHE)  &kp RA(SEMICOLON)  &kp RA(LEFT_BRACKET)  &kp RA(MINUS)  &trans      &mmv MOVE_LEFT  &hrr_m RIGHT_SHIFT MOVE_DOWN  &hrr_m LEFT_SHIFT MOVE_UP  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans              &trans             &mkp MB1              &mkp MB2       &mkp MB3    &trans          &kp RA(M)                     &trans                     &trans           &trans  &trans
+                                               &trans                &trans         &trans      &trans          &trans                        &trans
             >;
         };
     };
